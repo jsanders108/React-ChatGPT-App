@@ -43,6 +43,7 @@ function App() {
 
       //Reset the input prompt to be empty
       setPromptInput("")
+      
     } catch (error) {
       // Handle any errors that occur during the request
       console.error("Error sending request:", error);

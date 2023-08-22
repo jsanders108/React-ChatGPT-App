@@ -7,7 +7,6 @@ function App() {
 
   // URL of your Azure Function
   const azureFunctionUrl = 'https://openai1212.azurewebsites.net/api/completionAPI?';
-  console.log(promptInput)
 
   // Function to handle form submission
   const handleSubmit = async (e) => {
@@ -64,8 +63,8 @@ function App() {
                     value={promptInput}
                     onChange={(e) => setPromptInput(e.target.value)}
                 />
-            {/* Button to submit the question */}
-            <button className="main-section-btn">SUBMIT QUESTION</button>
+                {/* Button to submit the question */}
+                <button className="main-section-btn">SUBMIT QUESTION</button>
             </form>
             {/* Display the response from the Azure Function */}
             <div className="response">{response}</div>
